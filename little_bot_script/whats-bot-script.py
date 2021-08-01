@@ -4,14 +4,14 @@
 #importar as bibliotecas
 from selenium import webdriver
 import time
-from webdriver_manager.chrome import ChromeDriverManager
+from webdriver_manager.firefox import FirefoxDriverManager
 from selenium.webdriver.common.keys import Keys
 #navegar até o whats web
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Firefox(FirefoxDriverManager().install())
 driver.get('https://web.whatsapp.com/') 
 time.sleep(15)
 #definir contatos 
-contatos = ['Um contato', 'Um grupo', 'Outro contato']
+contatos = ['Eu']# ['Um contato', 'Um grupo', 'Outro contato']
 mensagem = 'isso é uma msg teste'
 #buscar contatos/grupos
 def buscar_contato(contato):
