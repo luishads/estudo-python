@@ -1,25 +1,22 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    student_26.py                                      :+:      :+:    :+:    #
+#    chef_29.py                                         :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lamorim <lamorim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/07/31 23:28:03 by lamorim           #+#    #+#              #
-#    Updated: 2021/08/01 00:26:14 by lamorim          ###   ########.fr        #
+#    Created: 2021/08/01 11:44:34 by lamorim           #+#    #+#              #
+#    Updated: 2021/08/01 11:47:35 by lamorim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-class Student:
+class Chef:
 
-    def __init__(self, name, major, gpa, is_on_probation):
-        self.name = name
-        self.major = major
-        self.gpa = gpa
-        self.is_on_probation = is_on_probation
+    def make_chicken(self):
+        print("The chef make a chicken")
 
-    def on_honor_roll(self):
-        if self.gpa >= 3.5:
-            return True
-        else:
-            return False
+    def make_salad(self):
+        print("The chef make a salad")
+
+    def make_special_dish(self):
+        print("The chef make bbq ribs")

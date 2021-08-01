@@ -1,25 +1,20 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    student_26.py                                      :+:      :+:    :+:    #
+#    29_inheritance.py                                  :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lamorim <lamorim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/07/31 23:28:03 by lamorim           #+#    #+#              #
-#    Updated: 2021/08/01 00:26:14 by lamorim          ###   ########.fr        #
+#    Created: 2021/08/01 11:43:48 by lamorim           #+#    #+#              #
+#    Updated: 2021/08/01 12:03:01 by lamorim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-class Student:
+from chef_29 import Chef
+from chinese_chef_29 import chineseChef
 
-    def __init__(self, name, major, gpa, is_on_probation):
-        self.name = name
-        self.major = major
-        self.gpa = gpa
-        self.is_on_probation = is_on_probation
+myChef = Chef()
+myChef.make_special_dish()
 
-    def on_honor_roll(self):
-        if self.gpa >= 3.5:
-            return True
-        else:
-            return False
+myChineseChef = chineseChef()
+myChineseChef.make_special_dish()

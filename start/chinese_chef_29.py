@@ -1,25 +1,21 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    student_26.py                                      :+:      :+:    :+:    #
+#    chinese_chef_29.py                                 :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
 #    By: lamorim <lamorim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2021/07/31 23:28:03 by lamorim           #+#    #+#              #
-#    Updated: 2021/08/01 00:26:14 by lamorim          ###   ########.fr        #
+#    Created: 2021/08/01 11:56:37 by lamorim           #+#    #+#              #
+#    Updated: 2021/08/01 12:04:10 by lamorim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-class Student:
+from chef_29 import Chef
 
-    def __init__(self, name, major, gpa, is_on_probation):
-        self.name = name
-        self.major = major
-        self.gpa = gpa
-        self.is_on_probation = is_on_probation
+class chineseChef(Chef):
 
-    def on_honor_roll(self):
-        if self.gpa >= 3.5:
-            return True
-        else:
-            return False
+    def make_special_dish(self):
+        print("The chef makes orange chicken")
+
+    def make_fried_rice(self):
+        print("The chef makes fried rice")
