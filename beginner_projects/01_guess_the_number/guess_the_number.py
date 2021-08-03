@@ -6,7 +6,7 @@
 #    By: lamorim <lamorim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/01 14:56:11 by lamorim           #+#    #+#              #
-#    Updated: 2021/08/01 15:37:00 by lamorim          ###   ########.fr        #
+#    Updated: 2021/08/02 20:27:41 by lamorim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,5 +43,5 @@ def computer_guess(x):
 
     print(f'Computer guessed your number! Bip.')
 
-# guess(42)
-computer_guess(42)
+guess(42)
+# computer_guess(42)
