@@ -6,7 +6,7 @@
 #    By: lamorim <lamorim@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/08/04 23:26:24 by lamorim           #+#    #+#              #
-#    Updated: 2021/08/07 16:46:09 by lamorim          ###   ########.fr        #
+#    Updated: 2021/08/08 21:04:52 by lamorim          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -23,10 +23,10 @@ def find_jobs():
             #card_travel = job.find('li').string
             i_tag = job.i.decompose()
             card_travel = job.li.text
-            if '0' == card_travel[0]:
+            if card_travel.startswith('0'):
                 #print(card_travel)
-                company_name = job.find('h3', class_='joblist-comp-name').text.replace(' ','')
-                skills = job.find('span', class_='srp-skills').text.replace(' ','')
+                company_name = job.find('h3', class_='joblist-comp-name').text
+                skills = job.find('span', class_='srp-skills').text.replace(' ','').replace(',', ', ')
                 more_info = job.header.h2.a['href']
                 
                 print(f'''
